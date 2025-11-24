@@ -21,12 +21,12 @@ public class CitizensPlans {
     private Double benefit_amount;
     private String denial_reason;
     private LocalDate terminate_date;
-    private Double terminate_reason;
+    private String terminate_reason;
 
     public CitizensPlans() {
     }
 
-    public CitizensPlans(Integer id, String citizen_name, String gender, String plan_name, String plan_status, LocalDate plan_start_date, LocalDate plan_end_date, Double benefit_amount, String denial_reason, LocalDate terminate_date, Double terminate_reason) {
+    public CitizensPlans(Integer id, String citizen_name, String gender, String plan_name, String plan_status, LocalDate plan_start_date, LocalDate plan_end_date, Double benefit_amount, String denial_reason, LocalDate terminate_date, String terminate_reason) {
         this.id = id;
         this.citizen_name = citizen_name;
         this.gender = gender;
@@ -120,11 +120,11 @@ public class CitizensPlans {
         this.terminate_date = terminate_date;
     }
 
-    public Double getTerminate_reason() {
+    public String getTerminate_reason() {
         return terminate_reason;
     }
 
-    public void setTerminate_reason(Double terminate_reason) {
+    public void setTerminate_reason(String  terminate_reason) {
         this.terminate_reason = terminate_reason;
     }
 }
