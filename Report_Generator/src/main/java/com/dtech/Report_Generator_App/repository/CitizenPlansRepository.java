@@ -11,8 +11,8 @@ import java.util.List;
 public interface CitizenPlansRepository extends JpaRepository<CitizensPlans , Integer> {
 
     @Query("select distinct(plan_name) from CitizensPlans ")
-    public List<CitizensPlans> getPlansNames();
+    public List<String> getPlansNames();
 
     @Query("select distinct(plan_status) from CitizensPlans ")
-    public List<CitizensPlans> getPlansStatus();
+    public List<String> getPlansStatus();
 }

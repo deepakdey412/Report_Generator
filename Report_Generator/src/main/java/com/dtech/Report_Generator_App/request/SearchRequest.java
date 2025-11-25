@@ -1,12 +1,16 @@
 package com.dtech.Report_Generator_App.request;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.time.LocalDate;
 
 public class SearchRequest {
 
     private String plan_name;
     private String plan_status;
+    @DateTimeFormat(pattern = "dd-MM-yyyy")
     private LocalDate plan_start_date;
+    @DateTimeFormat(pattern = "dd-MM-yyyy")
     private LocalDate plan_end_date;
 
     public SearchRequest() {
