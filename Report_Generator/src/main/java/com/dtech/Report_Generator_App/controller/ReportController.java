@@ -6,6 +6,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ReportController {
 
-//    @GetMapping("/name")
-//    public
+    @GetMapping("/")
+    public String get(){
+        return "Deepalk";
+    }
+
 }

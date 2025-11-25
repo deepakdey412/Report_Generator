@@ -16,8 +16,11 @@ public class DataLoader implements ApplicationRunner {
     @Autowired
     private CitizenPlansRepository citizenPlansRepository;
 
+
+
     @Override
     public void run(ApplicationArguments args) throws Exception {
+        citizenPlansRepository.deleteAll();
 
         // ==================== FOOD SCHEME ====================
 
