@@ -121,8 +121,8 @@
 
             <tbody>
 
-            <tr th:each="plan : ${citizenPlansInfo}">
-                <td th:text="${plan.id}"></td>
+            <tr th:each="plan, stat : ${citizenPlansInfo}">
+                <td th:text="${stat.index + 1}"></td> <!-- 👈 Serial Number -->
                 <td th:text="${plan.citizen_name}"></td>
                 <td th:text="${plan.gender}"></td>
                 <td th:text="${plan.plan_name}"></td>
@@ -141,6 +141,7 @@
             </tr>
 
             </tbody>
+
 
         </table>
 
